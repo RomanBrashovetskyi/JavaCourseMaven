@@ -3,17 +3,14 @@ package JavaCourseTasks;
 import java.util.HashMap;
 import java.util.Map;
 
-public class task3Anagram {
+public class Task3AnagramVer2 {
 
     public static String result = "";
 
-    public void solution(String inputText) {
+    public void reverseAlphabeticCharsOnly(String inputText) {
 
-        inputText = "12cba hgf!@";
+        requiredNonNull(inputText);
 
-        if (inputText == null) {
-            throw new IllegalArgumentException("Non null input string required!");
-        }
         stringToWords(inputText);
     }
 
@@ -27,7 +24,7 @@ public class task3Anagram {
             result = result + reverseWord(text);
         } else {
             word = text.substring(0, positionOfSpace);
-            result = result + reverseWord(word) + " ";
+            result = result + reverseWord(word);
             stringToWords(text.substring(positionOfSpace + 1, textLength));
         }
     }
@@ -96,4 +93,10 @@ public class task3Anagram {
         }
         return reversedWord.toString();
     }
+
+    private void requiredNonNull(String inputText) {
+        if (inputText == null) {
+            throw new IllegalArgumentException("Non null input string required!");
+        }
+}
 }

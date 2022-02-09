@@ -1,44 +1,45 @@
-import org.junit.jupiter.api.Test;
+import JavaCourseTasks.Task3AnagramVer1;
+import org.junit.Test;
 
 class task3Anagram {
 
     @Test
     void shouldReturnAnagramOfString() {
 
-        task3Anagram sol = new task3Anagram();
+        Task3AnagramVer1 sol = new Task3AnagramVer1();
 
             String inputValue = "";
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = null;
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = " ";
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = "    ";//4
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = "a";
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = "aaaaa";
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = "!@#$%";
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = "aaAAaAa";
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = "abcd efgh";
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = "a1bcd efg!h";
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
             inputValue = "!@QwErTy #$UiOp%^ !AsdFgh^&*(";
-            sol.solution(inputValue);
+            sol.reverseAlphabeticCharsOnly(inputValue);
 
     }
 }

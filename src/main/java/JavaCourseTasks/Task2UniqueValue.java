@@ -2,7 +2,7 @@ package JavaCourseTasks;
 
 import java.util.Arrays;
 
-public class task2UniqueValue {
+public class Task2UniqueValue {
 
     public static void main(String[] args) {
 
