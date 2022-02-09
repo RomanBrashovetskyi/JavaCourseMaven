@@ -16,8 +16,6 @@ All non-letter symbols should stay on the same places!
 input text=> "a1bcd efg!h"
 result=> "d1cba hgf!e"
 
-input text=> "textLengths"
-
 Use Latin alphabet for test only.
 
 Hint:
